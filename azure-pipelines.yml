@@ -19,7 +19,7 @@ steps:
 
   - task: CopyFiles@2
     inputs:
-      sourceFolder: '$(System.DefaultWorkingDirectory)/dist/apipelines'
+      sourceFolder: '$(System.DefaultWorkingDirectory)/dist/tacos-ui'
       contents: |
         **/*
       targetFolder: '$(Build.ArtifactStagingDirectory)'
