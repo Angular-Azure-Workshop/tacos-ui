@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  loginReturlUrl: 'https://127.0.0.1:4200/',
+  baseLoginUrl: 'https://tacofancy-api.azurewebsites.net/.auth/login/',
+  loginQuery: 'session_mode=token&post_login_redirect_url=',
+  userLoginDetailsUrl: 'https://tacofancy-api.azurewebsites.net/.auth/me',
+  logoutUrl:
+    'https://tacofancy-api.azurewebsites.net/.auth/logout?post_logout_redirect_uri=',
+  logoutReturnPath: '/'
 };
 
 /*

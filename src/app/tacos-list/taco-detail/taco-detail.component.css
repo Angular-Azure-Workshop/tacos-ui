@@ -1,0 +1,13 @@
+.header {
+  min-height: 200px;
+  background-color: #df9300;
+  font-family: 'Charmonman', cursive;
+  font-size: 136px;
+  text-align: center;
+}
+
+.recipe {
+  width: 80%;
+  margin: auto;
+  align-content: center;
+}

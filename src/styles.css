@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Charmonman:700');
+html,
+body {
+  background: #df9300;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Charmonman', cursive;
+  font-size: 16px;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
