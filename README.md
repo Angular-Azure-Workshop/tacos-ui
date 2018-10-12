@@ -46,4 +46,8 @@ this.router.events.subscribe((event: Event) => {
 4. Commit and push changes to github. Run app and navigate to different routes a couple of times. Then go back to the AppInsights overview page and navigate to *Application Map* to monitor details about page views
 ![Page Views](https://tacofancy.blob.core.windows.net/tutorial/PageViews.png)
 
+5. Trigger a failure by changing the URL in *app.service.ts* to an invalid value. In the browser, got to http://localhost:4201/#/tacos and notice 404 error in the console. Now in the Azure portal go to the AppInsights instance and select Browser page. Choose Browser Failures and notice details about the 404 error
+![Browser Failures](https://tacofancy.blob.core.windows.net/tutorial/BrowserFailures.png)
+
+6. Continue experimenting by triggering exceptions in the Angular code and inspect them in the Browser failures tab. 
 
