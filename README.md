@@ -4,11 +4,11 @@
 
 In this Lab you will learn to:
 
-* [Azure Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview/?WT.mc_id=workshop-github-sicotin)
+* [Azure Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview/?WT.mc_id=workshop-github-js-team)
     * Create an instance of Application Insights
     * Use SDK to track events in your Angular application 
     
-Learn more about Designing for efficiency and operations in this [Microsoft Learn module](https://docs.microsoft.com/en-us/learn/modules/design-for-efficiency-and-operations-in-azure/index/?WT.mc_id=workshop-github-sicotin)
+Learn more about Designing for efficiency and operations in this [Microsoft Learn module](https://docs.microsoft.com/en-us/learn/modules/design-for-efficiency-and-operations-in-azure/index/?WT.mc_id=workshop-github-js-team)
 
 ## Azure Applications Insights
 
