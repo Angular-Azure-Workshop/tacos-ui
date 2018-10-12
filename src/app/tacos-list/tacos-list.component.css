@@ -1,0 +1,36 @@
+/* Structure */
+.header {
+  min-height: 200px;
+  background-color: #df9300;
+  font-family: 'Charmonman', cursive;
+  font-size: 136px;
+  text-align: center;
+}
+.example-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  min-width: 400px;
+  background-color: white;
+}
+
+.example-table-container {
+  position: relative;
+  min-height: 400px;
+  overflow: auto;
+  font-family: 'Charmonman', cursive;
+}
+
+table {
+  width: 100%;
+}
+
+/* Column Widths */
+.mat-column-number,
+.mat-column-state {
+  max-width: 64px;
+}
+
+.mat-column-created {
+  max-width: 124px;
+}
