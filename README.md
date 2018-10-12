@@ -14,6 +14,8 @@ In this lab you will learn to:
     * Configure a new Build Pipeline for an Angular project
     * Configure a new Release Pipeline to deploy files to Azure Storage
     
+To Learn more about Azure Storage checkout [Microsoft Learn path](https://docs.microsoft.com/en-us/learn/modules/store-app-data-with-azure-blob-storage/index )
+    
 ## Azure Storage
 
 1. In the browser, navigate to the Azure portal, https://portal.azure.com, and create a new Storage account. 
