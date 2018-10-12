@@ -63,6 +63,7 @@ steps:
 
   - task: PublishBuildArtifacts@1
 ```
+### Build Pipeline
 
 1. In the browser, go to http://dev.azure.com and click Sign in to Azure DevOps, use your Microsoft account to sign in. On the landing page click *New project*, fill in the project name with tacos-ui and click *Create*
 
@@ -70,3 +71,19 @@ steps:
 
 1. Save and queue. Click on the build link to view the in progress project
 ![Build Pipeline](https://tacofancy.blob.core.windows.net/tutorial/Build_Pipeline.png)
+
+### Release Pipeline
+
+1. Go to *Pipelines* -> *Releases* , Start with empty project 
+
+1. In the *Artifacts* tile click add and select *Build* source type. From there select the project & build pipeline you created earlier 
+
+1. In the *Stages* tile, click *1 job*, *Add Task* and select *Azure File Copy* from the list . 
+    * Change version to *2 Preview* 
+    * Set source to $(System.DefaultWorkingDirectory)/<your_proj_name_here_>/drop
+    * Choose Azure Subscription and ***click Authorize***
+    * Select Azure Blob as *Destination Type*
+    * Enter the name of the Storage Account you created earlier in the *RM Storage Account* input
+    * Set *$web* for *Container Name*
+
+1. Go back to *Builds* and Queue a new build
