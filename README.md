@@ -4,10 +4,12 @@
 
 In this Lab you will learn to:
 
-* Azure Application Insights
+* [Azure Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview/?WT.mc_id=workshop-github-sicotin)
     * Create an instance of Application Insights
     * Use SDK to track events in your Angular application 
     
+Learn more about Designing for efficiency and operations in this [Microsoft Learn module](https://docs.microsoft.com/en-us/learn/modules/design-for-efficiency-and-operations-in-azure/index/?WT.mc_id=workshop-github-sicotin)
+
 ## Azure Applications Insights
 
 1. In the browser, navigate to the Azure portal, https://portal.azure.com, and create a new Application Insights account 
