@@ -11,7 +11,10 @@ import { AppInsights } from 'applicationinsights-js';
 export class AppComponent implements OnInit {
   deviceInfo;
   constructor(public router: Router, public userService: UserService) {
-    userService.checkUserState();
+    this.userService.checkUserState();
+    if (this.userService.isLoggedIn) {
+      this.userService.getUserDetails();
+    }
   }
 
   ngOnInit() {

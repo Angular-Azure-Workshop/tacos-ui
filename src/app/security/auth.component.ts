@@ -1,21 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { Router } from '@angular/router';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-auth',
-  templateUrl: './auth.component.html'
+  template: ''
 })
 export class AuthComponent implements OnInit {
-  returnUrl = encodeURIComponent(environment.loginReturlUrl);
-  baseLoginUrl = environment.baseLoginUrl;
-  loginQuery = environment.loginQuery;
-  msftLoginUrl = `${this.baseLoginUrl}microsoftaccount?${this.loginQuery}${this.returnUrl}`;
-  twitterLoginUrl = `${this.baseLoginUrl}twitter?${this.loginQuery}${this.returnUrl}`;
-  userLoginDetailsUrl = environment.userLoginDetailsUrl;
-  logoutUrl = environment.logoutUrl + this.returnUrl;
-  logoutReturnPath = environment.logoutReturnPath;
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit() {
-    window.location.href = this.twitterLoginUrl;
+    if (this.router.url === '/login') {
+      this.userService.login();
+    } else if (this.router.url === '/logout') {
+      this.userService.logout();
+    }
   }
 }

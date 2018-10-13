@@ -8,21 +8,19 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found.component';
 import { LandingComponent } from './landing/landing.component';
 import { AuthComponent } from './security/auth.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './security/token.interceptor';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NotFoundComponent,
-    LandingComponent,
-    AuthComponent
+  declarations: [AppComponent, NotFoundComponent, LandingComponent, AuthComponent],
+  imports: [BrowserModule, TacosListModule, AppRoutingModule, BrowserAnimationsModule],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
   ],
-  imports: [
-    BrowserModule,
-    TacosListModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
