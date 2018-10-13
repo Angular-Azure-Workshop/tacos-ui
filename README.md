@@ -1,6 +1,6 @@
 # tacos-ui
 
-A demo application for Simona and Brian's Angular and Azure Workshop
+A demo Angular application for Simona and Brian's Angular and Azure Workshop
 
 ## Setup to run completed app
 
