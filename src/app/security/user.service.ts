@@ -64,7 +64,7 @@ export class UserService {
   }
 
   public login() {
-    window.location.href = this.twitterLoginUrl;
+    window.location.href = this.msftLoginUrl;
   }
 
   public logout() {
