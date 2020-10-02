@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Taco } from './taco.model';
 
-const TACOS_API = 'https://tacofancy.blob.core.windows.net/data/data.json';
+const TACOS_API =
+  'https://brian-is-now-awesome.azurewebsites.net/api/GetRecipes';
 @Injectable({
   providedIn: 'root'
 })
