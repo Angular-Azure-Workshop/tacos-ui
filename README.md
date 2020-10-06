@@ -92,7 +92,7 @@ steps:
 ```
 ### Build Pipeline
 
-1. In the browser, go to https://dev.azure.com:80/?WT.mc_id=tacosui-github-sicotin and click Sign in to Azure DevOps, use your Microsoft account to sign in. On the landing page click *New project*, fill in the project name with tacos-ui and click *Create*
+1. In the browser, go to http://dev.azure.com and click Sign in to Azure DevOps, use your Microsoft account to sign in. On the landing page click *New project*, fill in the project name with tacos-ui and click *Create*
 
 1. In the new project, got to *Pipelines* -> *Builds* and click *New Pipeline*. Select Github as source, Authorize Gitub and choose the project you forked earlier, branch *00-start*. Continue and configure the build to use *Configuration as code* and select the yml file you created earlier. 
 
